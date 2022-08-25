@@ -5,25 +5,125 @@
     <title>Sofia Sarapura</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <div id="bienvenida">
       <h1><strong>Sofia Sarapura</strong></h1>
-      <h2>Bienvenido a mi pagina web!</h2>
+      <h2>¡Bienvenido a mi página web!</h2>
     </div>
     <nav class="menu">
       <ul>
         <li><a href="#imagen1"><button type="button" class="btn btn-outline-info">IMAGEN</button></a></li>
         <li><a href="#video1"><button type="button" class="btn btn-outline-info">VIDEO</button></a></li>
+        <li><a href="#familia"><button type="button" class="btn btn-outline-info">FAMILIA</button></a></li>
+        <!--
+        *Palabras que me gustan, con sus links que lleven a las definiciones. Algunas palabras:
+        - sempiterno
+        - glosolalia
+        - titiritero
+        - cutre
+       -->
       </ul>
+    <!--imagen--> 
     </nav>
     <div id="imagen1"> Imagen de un crisantemo rosa:<br>
       <img src="assets/img/florrosa.webp" alt="flor rosa" width="600px">
     </div>
+    <!--video-->
     <div id="video1"> Video "Think Pink":<br>
-      <video src="assets/video/ThinkPink.mp4" alt="Think pink" type="video/mp4" width="600px" controls></video>
-      
-    </div>
-  </div>
+        <video src="assets/video/ThinkPink.mp4" alt="Think pink" type="video/mp4" width="600px" controls></video>
+        <!--para puntuar el video y dejar un comentario-->
+      <p>Puntuá el video del 1 al 5:</p>
+      <form>
+        <input name="nombre" type="text" placeholder="Inserte su nombre aquí">
+      </form>
+      <button class="btn btn-outline-danger rounded-circle text-center mr-2 px-0" 
+      style="width: 38px; height: 38px" href="#">1</button>
+      <button class="btn btn-outline-warning rounded-circle text-center mr-2 px-0" 
+      style="width: 38px; height: 38px" href="#">2</button>
+      <button class="btn btn-outline-warning rounded-circle text-center mr-2 px-0" 
+      style="width: 38px; height: 38px" href="#">3</button>
+      <button class="btn btn-outline-success rounded-circle text-center mr-2 px-0" 
+      style="width: 38px; height: 38px" href="#">4</button>
+      <button class="btn btn-outline-success rounded-circle text-center mr-2 px-0" 
+      style="width: 38px; height: 38px" href="#">5</button> 
+      <br>También podes dejarnos un comentario:<br>
+      <form>
+        <textarea cols="45" rows="8" id="comentario" name="comentarios">
+        </textarea>
+        <!--falta agregar un boton de envio-->
+      </form>  
+    </div> 
+    <!--familia-->
+    <div class="row g-5" id="familia">
+      <div class="col-lg-4">
+          <div class="section-title rounded h-100 p-5">
+              <h5 class="position-relative d-inline-block text-info text-uppercase">familia</h5>
+              <h1 class="display-6 mb-4">Conoce un poco de mi familia...</h1>
+          </div>
+      </div>
+      <!--connie-->
+      <div class="col-lg-4">
+          <div class="team-item">
+              <div class="position-relative rounded-top" style="z-index: 1;">
+                  <img class="img-fluid rounded-top w-100" src="assets/img/connie.jpg" alt="foto de connie">
+                  <div class="position-absolute top-100 start-50 translate-middle rounded p-2 d-flex">
+                      <a class="btn btn-info btn-square m-1" href="https://www.instagram.com/conniebianciotto/"><i class="fab fa-instagram fw-normal"></i></a>
+                  </div>
+              </div>
+              <div class="team-text position-relative text-center rounded-bottom p-4 pt-5">
+                  <h4 class="mb-2">Connie Bianciotto</h4>
+                  <p class="text-info mb-0">Mamá</p>
+              </div>
+          </div>
+      </div>
+      <!--tomi-->
+      <div class="col-lg-4">
+          <div class="team-item">
+              <div class="position-relative rounded-top" style="z-index: 1;">
+                  <img class="img-fluid rounded-top w-100" src="assets/img/tomi.jpg" alt="">
+                  <div class="position-absolute top-100 start-50 translate-middle rounded p-2 d-flex">
+                      <a class="btn btn-info btn-square m-1" href="https://l.instagram.com/?u=https%3A%2F%2Fopen.spotify.com%2Fuser%2F21iadaa7wdmccfsxay4l2dm6y%3Fsi%3DxNb5UMNTTt2npNR-9ZkfUQ&e=ATM-O2lkfoEKiy5RFEpNe9YKmiofDE0_KEvPRqLzlZ4astJg5BO2HYd7YuA_R2gAGGpWn0BrCnFmTGmQdNoyOQ&s=1"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                      <a class="btn btn-info btn-square m-1" href="https://www.instagram.com/tomisarapura/"><i class="fab fa-instagram fw-normal"></i></a>
+                  </div>
+              </div>
+              <div class="team-text position-relative text-center rounded-bottom p-4 pt-5">
+                  <h4 class="mb-2">Tomi Sarapura</h4>
+                  <p class="text-info mb-0">Hermano mayor</p>
+              </div>
+          </div>
+      </div>
+      <!--santi-->
+      <div class="col-lg-4">
+          <div class="team-item">
+              <div class="position-relative rounded-top" style="z-index: 1;">
+                  <img class="img-fluid rounded-top w-100" src="assets/img/santi.jpg" alt="">
+                  <div class="position-absolute top-100 start-50 translate-middle rounded p-2 d-flex">
+                      <a class="btn btn-info btn-square m-1" href="https://www.instagram.com/sarapura.santi/"><i class="fab fa-instagram fw-normal"></i></a>
+                  </div>
+              </div>
+              <div class="team-text position-relative text-center rounded-bottom p-4 pt-5">
+                  <h4 class="mb-2">Santi Sarapura</h4>
+                  <p class="text-info mb-0">Hermano menor</p>
+              </div>
+          </div>
+      </div>
+      <!--sofi-->
+      <div class="col-lg-4" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: slideInUp;">
+          <div class="team-item">
+              <div class="position-relative rounded-top" style="z-index: 1;">
+                  <img class="img-fluid rounded-top w-100" src="assets/img/sofi.jpg" alt="">
+                  <div class="position-absolute top-100 start-50 translate-middle rounded p-2 d-flex">
+                      <a class="btn btn-info btn-square m-1" href="https://www.instagram.com/sofi.sarapura/"><i class="fab fa-instagram fw-normal"></i></a>
+                  </div>
+              </div>
+              <div class="team-text position-relative text-center rounded-bottom p-4 pt-5">
+                  <h4 class="mb-2">Sofi Sarapura</h4>
+                  <p class="text-info mb-0">Hermana del medio</p>
+              </div>
+          </div>
+      </div>
   </body>
 </html>

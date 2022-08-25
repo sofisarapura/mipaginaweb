@@ -15,8 +15,9 @@ nav.menu {
 nav ul{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    align-content: center;
     width: 100%;
+    justify-content: center;
 }
 nav li{
     padding: 10px;
@@ -31,6 +32,7 @@ div#imagen1{
     color:black; 
     font-size: x-large;
     background-color: bisque;
+    align-items: center;
     padding:30px;   
 }
 div#video1 {
@@ -38,4 +40,16 @@ div#video1 {
     font-size: x-large;
     background-color: bisque;
     padding:30px;
+}
+form{
+    padding-bottom: 15px;
+}
+div#familia {
+    background-color: bisque;
+}
+div.team-item  {
+    background-color: rgb(151, 0, 83);
+}
+h4.mb-2 {
+    color:bisque
 }
