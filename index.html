@@ -25,12 +25,14 @@
               VIDEO
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#video1" target="_blank">video</a></li>
-              <li><a class="dropdown-item" href="#">comentarios</a></li>
+              <li><a class="dropdown-item" href="#video1">video</a></li>
+              <!--href="#video1" target="_blank"-->
+              <li><a class="dropdown-item" href="#comentarios">comentarios</a></li>
             </ul>
         </li>
         </div>
         <li><a href="#familia"><button type="button" class="btn btn-outline-info">FAMILIA</button></a></li>
+        <li><a href="#familia"><button type="button" class="btn btn-outline-info">PALABRAS</button></a></li>
         <!--
         *Palabras que me gustan, con sus links que lleven a las definiciones. Algunas palabras:
         - sempiterno
@@ -55,7 +57,7 @@
         <video src="assets/video/ThinkPink.mp4" alt="Think pink" type="video/mp4" width="600px" controls></video>
         <!--para puntuar el video y dejar un comentario-->
       <p>Para darnos tu opinion, dejanos tus datos...</p>
-      <form class="pure-form">
+      <form class="pure-form" id="comentarios">
         <input type="text" class="pure-input-rounded" alt="nombre" placeholder="Nombre y apellido"/>
         <input type="text" class="pure-input-rounded" alt="mail" placeholder="mail"/>
         <input type="password" class="pure-input-rounded" alt="contraseña" placeholder="contraseña" />
@@ -83,14 +85,14 @@
     </div> 
     <!--familia-->
     <div class="row g-5" id="familia">
-      <div class="col-lg-4">
+      <div class="col-sm-4" style="max-width:300px;">
           <div class="section-title rounded h-100 p-5">
               <h5 class="position-relative d-inline-block text-info text-uppercase">familia</h5>
               <h1 class="display-6 mb-4">Conoce un poco de mi familia...</h1>
           </div>
       </div>
       <!--connie-->
-      <div class="col-lg-4">
+      <div class="col-sm-4" style="max-width:375px;">
           <div class="team-item">
               <div class="position-relative rounded-top" style="z-index: 1;">
                   <img class="img-fluid rounded-top w-100" src="assets/img/connie.jpg" alt="foto de connie">
@@ -105,7 +107,7 @@
           </div>
       </div>
       <!--tomi-->
-      <div class="col-lg-4">
+      <div class="col-sm-4" style="max-width:375px;">
           <div class="team-item">
               <div class="position-relative rounded-top" style="z-index: 1;">
                   <img class="img-fluid rounded-top w-100" src="assets/img/tomi.jpg" alt="">
@@ -121,7 +123,7 @@
           </div>
       </div>
       <!--santi-->
-      <div class="col-lg-4">
+      <div class="col-sm-4" style="max-width:375px;">
           <div class="team-item">
               <div class="position-relative rounded-top" style="z-index: 1;">
                   <img class="img-fluid rounded-top w-100" src="assets/img/santi.jpg" alt="">
@@ -136,7 +138,7 @@
           </div>
       </div>
       <!--sofi-->
-      <div class="col-lg-4" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: slideInUp;">
+      <div class="col-sm-4" style="max-width:375px;">
           <div class="team-item">
               <div class="position-relative rounded-top" style="z-index: 1;">
                   <img class="img-fluid rounded-top w-100" src="assets/img/sofi.jpg" alt="">
@@ -148,6 +150,60 @@
                   <h4 class="mb-2">Sofi Sarapura</h4>
                   <p class="text-info mb-0">Hermana del medio</p>
               </div>
+          </div>
+      </div>
+      <br>
+      <br>
+      <!--Palabras-->
+      <div class="container col-lg-3" id="palabras">
+        <div class="accordion" id="acordeon">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="glosolalia-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#glosolalia-def" aria-expanded="true" aria-controls="glosolalia-def">
+                  glosolalia
+                </button>
+              </h2>
+                <div id="glosolalia-def" class="accordion-collapse collapse show" aria-labelledby="glosolalia-def">
+                <div class="accordion-body">
+                La glosolalia, de acuerdo con los lingüistas, es la vocalización fluida de sílabas sin significado comprensible alguno. 
+                En algunas creencias religiosas como el pentecostalismo, donde a esta práctica se le conoce como don de lenguas,
+                a tales sonidos se los considera un lenguaje divino desconocido al hablante.
+                El término deriva de «glōssais lalō», una frase del griego (γλώσσα [glossa], "lengua", y λαλεῖν [laleín], "hablar"),
+                usada en el Nuevo Testamento (1 Corintios 14:18), aunque ya era mencionado en la literatura clásica griega.
+                El término relacionado «xenolalia» o «xenoglosia» se usa para describir el fenómeno en el que el lenguaje que 
+                es hablado es una lengua natural previamente desconocida para el hablante.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="titiritero-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#titiritero-def" aria-expanded="false" aria-controls="titiritero-def">
+                  titiritero
+                </button>
+              </h2>
+              <div id="titiritero-def" class="accordion-collapse collapse" aria-labelledby="titiritero-def">
+                <div class="accordion-body">
+                    Titiritero, titerero o marionetista puede referirse a la persona que construye títeres y a la que los 
+                    maneja ante un público en representaciones teatrales, cine, televisión y otros espectáculos mixtos.
+                    El titiritero, como artista y hombre espectáculo, desarrolla tres cualidades esenciales: capacidad 
+                    para desdoblarse en un muñeco y mimetizarse con el mundo que representa; habilidad para mover el títere 
+                    que maneja consiguiendo comunicar un relato fantástico; disponer de varios registros de voz y sentido del
+                    ritmo para darle vida el muñeco.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
           </div>
       </div>
   </body>
