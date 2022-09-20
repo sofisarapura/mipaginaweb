@@ -1,6 +1,8 @@
 * {
     font-family:'Times New Roman', Times, serif;
+    background-color: bisque
 }
+
 div#bienvenida {
     text-align: center;
     padding: 25px;
@@ -53,4 +55,17 @@ div.team-item  {
 }
 h4.mb-2 {
     color:bisque
+}
+
+div#palabras {
+    display: flex;
+    flex-direction: row;
+}
+
+div#video {
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    margin-left: auto;
+    margin-left: 40px;
 }
