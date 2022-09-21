@@ -19,7 +19,7 @@
     </div>
     <nav class="menu">
       <ul>
-        <li><a href="#imagen1"><button type="button" class="btn btn-outline-info">IMAGEN</button></a></li>
+        <li><a href="#imagen1"><button type="button" class="btn btn-outline-info">POEMA</button></a></li>
         <li><div class="dropdown">
             <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
               VIDEO
@@ -33,20 +33,63 @@
         </div>
         <li><a href="#familia"><button type="button" class="btn btn-outline-info">FAMILIA</button></a></li>
         <li><a href="#familia"><button type="button" class="btn btn-outline-info">PALABRAS</button></a></li>
-        <!--
-        *Palabras que me gustan, con sus links que lleven a las definiciones. Algunas palabras:
-        - sempiterno
-        - cutre
-       -->
       </ul>
-    <!--imagen--> 
+    <!--poema--> 
     </nav> 
-    <section class="container-fluid">
-    <div id="imagen1"> Imagen de un crisantemo rosa:<br>
-      <img src="assets/img/florrosa.webp" alt="flor rosa" width="600px">
-    <!--COMO HAGO PARA QUE SE VEA A LA DERECHA-->  
+    <div class="container-fluid" id="poema">
+      <div class="row align-items-center">
+        <div id="imagen1" class="col"> 
+          <img src="assets/img/narciso.jpg" alt="narcisos" width="400px">
+        </div>
+        <div id="poema" class="col">
+          
+            <h3>Daffodils</h3><br>
+            I wandered lonely as a cloud<br>
+            That floats on high o'er vales and hills,<br>
+            When all at once I saw a crowd,<br>
+            A host, of golden daffodils;<br>
+            Beside the lake, beneath the trees,<br>
+            Fluttering and dancing in the breeze.<br>
+            <br>
+            Continuous as the stars that shine<br>
+            And twinkle on the milky way,<br>
+            They stretched in never-ending line<br>
+            Along the margin of a bay:<br>
+            Ten thousand saw I at a glance,<br>
+            Tossing their heads in sprightly dance.<br>
+            <br>
+            The waves beside them danced, but they<br>
+            Out-did the sparkling waves in glee:<br>
+            A poet could not be but gay,<br>
+            In such a jocund company:<br>
+            I gazed'and gazed'but little thought<br>
+            What wealth the show to me had brought:<br>
+            <br>
+            For oft, when on my couch I lie<br>
+            In vacant or in pensive mood,<br>
+            They flash upon that inward eye<br>
+            Which is the bliss of solitude;<br>
+            And then my heart with pleasure fills,<br>
+            And dances with the daffodils.<br>
+          
+        </div>
+        <div class="col" id="explicacion">
+          <p>
+            Este poema de William Wordsworth, llamado <u>Daffodils</u> o <u>I Wandered Lonely as a
+            Cloud</u> (que se traduce a <i>narcisos</i> en español) fue uno de los muchos 
+            poemas que estudie y analice en profundidad durante la secundaria. Fue inspirado el 15 de abril
+            de 1802 cuando paseando por un bosque con su hermana Dorothy se cruzaron con un largo camino de 
+            narcisos. El poema fue escrito en 1804 y publicado en 1807.<br>        
+            Por algun motivo, este fue el primero que sentí que realmente entendí y que me acerco al mundo de la poesía 
+            y la literatura lírica. Algo tan simple como un narciso, este poeta le dedico
+            4 estrofas, 24 versos, llenos de admiración hacia esta flor. No se abstiene a palabras y descripciones
+            simples, se rebusca con metaforas, comparaciones y similitudes, generando en el lector un "afecto"
+            antes inexistente hacia una planta. 
+          </p>
+        </div>
+      </div>
     </div>
-    </section>
+  </div>
     <!--video-->
     <div  id="video">
     <div class="container" id="video1"> Video "Think Pink":<br>
@@ -153,9 +196,11 @@
       </div>
       <br>
       <br>
+      <br>
       <!--Palabras-->
-      <div class="container col-lg-3" id="palabras">
-        <div class="accordion" id="acordeon">
+      <div class="container-fluid row align-items-center" id="palabras">
+        <div class="accordion col" id="acordeon-sustantivos">
+          <!--SUSTANTIVOS-->
           <h3>Sustantivos</h3><br>
             <div class="accordion-item">
               <h2 class="accordion-header" id="glosolalia-header">
@@ -193,12 +238,12 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <h2 class="accordion-header" id="picaflor-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#picaflor-def" aria-expanded="false" aria-controls="picaflor-def">
                   Picaflor
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div id="picaflor-def" class="accordion-collapse collapse" aria-labelledby="picaflor-def">
                 <div class="accordion-body">
                   colibrí.<br>
 
@@ -207,28 +252,28 @@
               </div>
             </div>
           </div>
-
-          <div class="accordion" id="acordeon">
+          <!--ADJETIVOS-->
+          <div class="accordion col" id="acordeon-adjetivos">
             <h3>Adjetivos</h3><br>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="glosolalia-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#glosolalia-def" aria-expanded="true" aria-controls="glosolalia-def">
+              <h2 class="accordion-header" id="paradisiaca-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#paradisiaca-def" aria-expanded="true" aria-controls="paradisiaca-def">
                   Paradisíaca
                 </button>
               </h2>
-                <div id="glosolalia-def" class="accordion-collapse collapse show" aria-labelledby="glosolalia-def">
+                <div id="paradisiaca-def" class="accordion-collapse collapse show" aria-labelledby="paradisiaca-def">
                 <div class="accordion-body">
                   Del latín tardío paradisiăcus, y este del bizantino παραδεισιακός paradeisiakós. Perteneciente o relativo al paraíso.
                 </div>
                 </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="titiritero-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#titiritero-def" aria-expanded="false" aria-controls="titiritero-def">
+              <h2 class="accordion-header" id="nictalope-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nictalope-def" aria-expanded="false" aria-controls="nictalope-def">
                   Nictálope
                 </button> 
               </h2>
-              <div id="titiritero-def" class="accordion-collapse collapse" aria-labelledby="titiritero-def">
+              <div id="nictalope-def" class="accordion-collapse collapse" aria-labelledby="nictalope-def">
                 <div class="accordion-body">
                   Del lat. nyctălops, -ōpis 'que solo ve de noche'. dicho de una persona o de un animal: que ve mas de noche
                   que de día
@@ -236,18 +281,84 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <h2 class="accordion-header" id="sempiterno-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sempiterno-def" aria-expanded="false" aria-controls="sempiterno-def">
                   Sempiterno
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div id="sempiterno-def" class="accordion-collapse collapse" aria-labelledby="sempiterno-def">
                 <div class="accordion-body">
                   Del latin <i>sempiternus</i>. Que durará siempre; que, habiendo tenido principio, no tendrá fin.
                 </div>
               </div>
             </div>
           </div>
+          <!--VERBOS-->
+          <div class="accordion col" id="acordeon-verbos">
+            <h3>Verbos</h3><br>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="trizar-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#trizar-def" aria-expanded="true" aria-controls="trizar-def">
+                  Trizar
+                </button>
+              </h2>
+                <div id="trizar-def" class="accordion-collapse collapse show" aria-labelledby="trizar-def">
+                <div class="accordion-body">
+                  Hacer trizas. Destrizar. Del latin <i>tritiāre</i>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="nictalope-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nictalope-def" aria-expanded="false" aria-controls="nictalope-def">
+                  Verbo 2??
+                </button> 
+              </h2>
+              <div id="nictalope-def" class="accordion-collapse collapse" aria-labelledby="nictalope-def">
+                <div class="accordion-body">
+                  DEF VERBO 2. Acomodar tmbn que no se bajen las defs de los verbos con la de los adjs
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="sempiterno-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sempiterno-def" aria-expanded="false" aria-controls="sempiterno-def">
+                  VERBO 3???
+                </button>
+              </h2>
+              <div id="sempiterno-def" class="accordion-collapse collapse" aria-labelledby="sempiterno-def">
+                <div class="accordion-body">
+                  DEF VERBO 3
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
+    <!--carousel con musica--> 
+    <!-- canciones: 
+    - you belong with me (taylor swift)
+    - Hot and cold (Katy Perry)
+    - Baby (JB)--> 
+    <div id="carouselMusicControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video src="assets/video/YouBelongWithMe.mp4.mp4" class="d-block w-100" alt="You Belong With Me - Taylor Swift" type="video/mp4" controls></video>
+        </div>
+        <div class="carousel-item">
+          <video src="assets/video/ThatShouldBeMe.mp4.mp4" class="d-block w-100" alt="That Should Be Me - Justin Bieber" type="video/mp4" controls></video>
+        </div>
+        <div class="carousel-item">
+          <video src="assets/video/ThinkingOutLoud.mp4" class="d-block w-100" alt="Thinking Out Loud - Ed Sheeran" type="video/mp4" controls></video>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMusicControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMusicControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </body>
 </html>
