@@ -1,11 +1,15 @@
 * {
     font-family:'Times New Roman', Times, serif;
+
 }
 
+.ColorDeFondo{
+    background-color: bisque;
+}
+    
 div#bienvenida {
     text-align: center;
     padding: 25px;
-    background-color: bisque;
     color: black;
 }
 nav.menu {
@@ -32,14 +36,12 @@ nav a {
 div#poema{
     color:black; 
     font-size: x-large;
-    background-color: bisque;
     align-items: center;
     padding:30px;   
 }
-div#video1 {
+div#video{
     color:black; 
     font-size: x-large;
-    background-color: bisque;
     padding:30px;
 }
 form{
@@ -47,7 +49,6 @@ form{
 
 }
 div#familia {
-    background-color: bisque;
 }
 div.team-item  {
     background-color: rgb(151, 0, 83);
@@ -64,7 +65,6 @@ div#palabras {
 div#video {
     display: flex;
     flex-direction: row;
-    background-color: bisque;
     margin-left: auto;
     margin-left: 40px;
 }
