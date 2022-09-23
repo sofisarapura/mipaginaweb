@@ -11,6 +11,7 @@ div#bienvenida {
     text-align: center;
     padding: 25px;
     color: black;
+    width: 100%;
 }
 nav.menu {
     display: flex;
@@ -37,15 +38,14 @@ div#poema{
     color:black; 
     font-size: x-large;
     align-items: center;
-    padding:30px;
-    margin-left: 40px   
+    padding-top: 30px;
+    padding-left: 40px   
 }
-div#video{
-    color:black; 
-    font-size: x-large;
-    padding:30px;
-    margin-left: 40px
+
+p{
+    text-align: justify
 }
+
 form{
     padding-bottom: 15px;
 
@@ -66,14 +66,19 @@ h4.mb-2 {
 div#palabras {
     display: flex;
     flex-direction: row;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 40px;
 }
 
 div#video {
     display: flex;
     flex-direction: row;
-    margin-left: auto;
-    margin-left: 40px;
+    padding-left: 40px;
+    color:black; 
+    font-size: x-large;
+    padding:30px;
+}
+div#musica {
+    padding:30px
 }
