@@ -1,5 +1,6 @@
 * {
     font-family:'Times New Roman', Times, serif;
+    
 
 }
 
@@ -39,7 +40,7 @@ div#poema{
     font-size: x-large;
     align-items: center;
     padding-top: 30px;
-    padding-left: 40px   
+    padding-left: 50px   
 }
 
 p{
@@ -51,12 +52,12 @@ form{
 
 }
 div#familia {
-    margin-left: 40px
+    margin-right: 50px
 }
 
 div.team-item  {
     background-color: rgb(151, 0, 83);
-    margin-left: 40px
+    margin-left: 50px
 }
 h4.mb-2 {
     color:bisque;
@@ -66,19 +67,18 @@ h4.mb-2 {
 div#palabras {
     display: flex;
     flex-direction: row;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
     padding-top: 40px;
 }
 
 div#video {
     display: flex;
     flex-direction: row;
-    padding-left: 40px;
+    padding-left: 50px;
     color:black; 
     font-size: x-large;
     padding:30px;
 }
 div#musica {
-    padding:30px
+    padding-left: 50px;
 }
