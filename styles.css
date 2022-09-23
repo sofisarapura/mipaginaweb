@@ -37,29 +37,38 @@ div#poema{
     color:black; 
     font-size: x-large;
     align-items: center;
-    padding:30px;   
+    padding:30px;
+    margin-left: 40px   
 }
 div#video{
     color:black; 
     font-size: x-large;
     padding:30px;
+    margin-left: 40px
 }
 form{
     padding-bottom: 15px;
 
 }
 div#familia {
+    margin-left: 40px
 }
+
 div.team-item  {
     background-color: rgb(151, 0, 83);
+    margin-left: 40px
 }
 h4.mb-2 {
-    color:bisque
+    color:bisque;
+    
 }
 
 div#palabras {
     display: flex;
     flex-direction: row;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 40px;
 }
 
 div#video {
